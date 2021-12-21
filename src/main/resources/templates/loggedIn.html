@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <title>Welcome user</title>
+</head>
+<body>
+<form action="#" th:action="@{/createShortLink}" th:object="${urlDto}" method="post">
+    <label for="url">Url</label><br/>
+    <input id="url" type="text" placeholder="Enter Url" th:field="*{original_url}"><br/><br/>
+    <label for="datetime">Expiry date</label><br/><input id="datetime" type="datetime-local" placeholder="Enter Url" th:field="*{expirationDate}"><br/><br>
+    <button type="submit">Generate link</button>
+
+</form>
+</body>
+</html>

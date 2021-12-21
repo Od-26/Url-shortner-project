@@ -1,0 +1,14 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello anonymous user</title>
+</head>
+<body>
+<form action="#" th:action="@{/anonymousUser/generate}" th:object="${urlDto}" method="post">
+    <label for="url"></label><input id="url" type="text" placeholder="Enter url" th:field="*{original_url}">
+    <br/><br/>
+    <button type="submit">Generate link</button><br/><br/>
+    <a th:href="@{/loggedIn}">Sign in with Google</a>
+</form>
+</body>
+</html>
