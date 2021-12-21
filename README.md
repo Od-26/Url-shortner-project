@@ -1,0 +1,1 @@
+A Url shortner built with Springboot for the backend and Thymeleaf for the frontend. It allows users generate a short url from a long url. This short url redirects to the long url when entered on the browser.
